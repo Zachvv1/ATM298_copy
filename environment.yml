@@ -1,0 +1,94 @@
+name: data-scrape
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  # Core
+  - python>=3.12
+  - pip
+  - setuptools
+  - wheel
+
+  # Jupyter / notebooks
+  - jupyterlab
+  - notebook
+  - ipykernel
+  - ipywidgets
+  - nbconvert
+
+  # Data analysis
+  - numpy
+  - pandas
+  - polars
+  - scipy
+  - statsmodels
+  - scikit-learn
+
+  # Visualization
+  - matplotlib
+  - seaborn
+  - plotly
+  - altair
+
+  # IO / file formats
+  - openpyxl
+  - pyarrow
+  - fastparquet
+  - lxml
+  - xlrd
+  - python-dateutil
+  - pytz
+  - tqdm
+
+  # Geospatial (optional but common for env/data work)
+  - geopandas
+  - shapely
+  - pyproj
+  - rasterio
+  - rioxarray
+  - xarray
+  - netcdf4
+  - h5py
+
+  # HTTP / scraping basics
+  - requests
+  - httpx
+  - urllib3
+  - beautifulsoup4
+  - selectolax
+  - soupsieve
+  - html5lib
+  - chardet
+  - charset-normalizer
+
+  # APIs / auth helpers
+  - requests-oauthlib
+  - oauthlib
+
+  # Parsing / text
+  - regex
+  - rapidfuzz
+
+  # Databases
+  - sqlalchemy
+  - duckdb
+  - psycopg2
+
+  # Dev quality-of-life
+  - rich
+  - pyyaml
+  - python-dotenv
+  - loguru
+
+  # Lint/format (optional but helpful)
+  - ruff
+  - black
+
+  # Some scraping tooling is more reliable via pip
+  - pip:
+      - playwright
+      - selenium
+      - webdriver-manager
+      - fake-useragent
+      - cloudscraper
+      - readability-lxml
