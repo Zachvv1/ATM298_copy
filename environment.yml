@@ -1,4 +1,4 @@
-name: data-scrape
+name: ATM298
 channels:
   - conda-forge
   - nodefaults
